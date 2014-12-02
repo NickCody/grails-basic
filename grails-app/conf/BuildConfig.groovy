@@ -63,6 +63,7 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
+        /*
         // plugins for the build system only
         build ":tomcat:7.0.55"
 
@@ -81,5 +82,17 @@ grails.project.dependency.resolution = {
         //compile ":less-asset-pipeline:1.10.0"
         //compile ":coffee-asset-pipeline:1.8.0"
         //compile ":handlebars-asset-pipeline:1.3.0.3"
+        */
+
+        build ':tomcat:7.0.55'
+
+        compile ":scaffolding:2.1.2"
+        compile ':cache:1.1.8'
+
+        compile ":lesscss-resources:1.3.3"
+        compile ":compass-sass:0.7"
+
+        runtime ':resources:1.2.13'
+        runtime ':twitter-bootstrap:2.3.2.2'
     }
 }

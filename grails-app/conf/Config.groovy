@@ -85,6 +85,13 @@ grails.hibernate.pass.readonly = false
 // configure passing read-only to OSIV session by default, requires "singleSession = false" OSIV mode
 grails.hibernate.osiv.readonly = false
 
+grails.resources.uri.prefix                     = "static"
+grails.resources.modules                        = {} // Defined in AppResources.groovy
+grails.resources.resourceLocatorEnabled         = true
+grails.resources.adhoc.patterns                 = ['/img/*', '/images/*', '/css/*', '/js/*', '/plugins/*']
+grails.resources.adhoc.includes                 = ['/img/**', '/images/**', '/css/**', '/js/**', '/plugins/**']
+grails.resources.debug                          = true
+
 environments {
     development {
         grails.logging.jul.usebridge = true
